@@ -173,18 +173,21 @@ def update_csv(info):
 
     pass
 
-def export_csv():
+def export_csv(dataframe):
     """
     """
     pass
 
-def send_to_notion():
+def send_to_notion(dataframe):
     """
+    It's on the roadmap!
     """
     pass
 
 def predict_category(merchant):
     """
+    Takes a merchant's name and predicts the category this merchant belongs in.
+    Returns a string (category name)
     """
     pass
 
@@ -195,6 +198,12 @@ def convert_date(date_str):
     """
     # TODO: Decide on a format for date, date-time?
     return pd.Timestamp(date_str)
+
+def visualise(dataframe):
+    """
+    Performes analysis on dataframe
+    """
+    pass
 
 if __name__ == "__main__":
     # Consts
@@ -229,5 +238,5 @@ if __name__ == "__main__":
     check_for_charges(service)
 
     # Upon a command (or a cron job), do these:
-    export_csv()
+    export_csv(dataframe)
     
